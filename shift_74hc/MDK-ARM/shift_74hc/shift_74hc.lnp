@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"shift_74hc\main.o"
+"shift_74hc\stm32f4xx_it.o"
+"shift_74hc\stm32f4xx_hal_msp.o"
+"shift_74hc\stm32f4xx_hal_tim_ex.o"
+"shift_74hc\stm32f4xx_hal_tim.o"
+"shift_74hc\stm32f4xx_hal_flash_ramfunc.o"
+"shift_74hc\stm32f4xx_hal_pwr.o"
+"shift_74hc\stm32f4xx_hal_flash.o"
+"shift_74hc\stm32f4xx_hal_dma.o"
+"shift_74hc\stm32f4xx_hal_dma_ex.o"
+"shift_74hc\stm32f4xx_hal_spi.o"
+"shift_74hc\stm32f4xx_hal.o"
+"shift_74hc\stm32f4xx_hal_flash_ex.o"
+"shift_74hc\stm32f4xx_hal_gpio.o"
+"shift_74hc\stm32f4xx_hal_cortex.o"
+"shift_74hc\stm32f4xx_hal_rcc_ex.o"
+"shift_74hc\stm32f4xx_hal_rcc.o"
+"shift_74hc\stm32f4xx_hal_pwr_ex.o"
+"shift_74hc\system_stm32f4xx.o"
+"shift_74hc\startup_stm32f407xx.o"
+--library_type=microlib --strict --scatter "shift_74hc\shift_74hc.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "shift_74hc.map" -o shift_74hc\shift_74hc.axf
